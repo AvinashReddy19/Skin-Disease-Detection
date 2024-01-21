@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classification</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .prediction-results {
+            display: none;
+        }
+        .cont{
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin: 15px;
+            width: 40%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 7px solid white;
+            
+            
+
+        }
+        .bg-container{
+            background-image: url("https://institutosegurancaprivada.com.br/wp-content/uploads/2019/06/hospital-website-background-7.jpg");
+            padding: 30px;
+            display: flex;
+            background-size: cover;
+            height: 100%;
+            justify-content: center;
+        }
+        .predict-button{
+            width: 120px;
+            font-size: 25px;
+        }
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex flex-column">
+    <div class="bg-container d-flex flex-row">
+    <div class="shadow cont container">
+        <h1 class="mb-5">Upload an Image</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data" id="upload-form">
+            <div class="mb-5 form-group">
+                <input type="file" class="form-control-file" name="image" accept="image/*" required>
+            </div>
+            
+            <button type="submit" class="predict-button btn btn-primary" >
+                Predict
+           </button>
+            
+            <div class="modal fade" id="opmodal" role="dialog">
+              <div class="modal-dialog">
+              
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Disease</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text</p>
+                  </div>
+                  <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Book Appointment</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+           
+        </form>
+        
+        <div class="prediction-results mt-4" id="prediction-results">
+            <h2>Prediction Result</h2>
+            <p id="predicted-class"></p>
+            <button type="button" class="btn btn-secondary" onclick="goBack()">Choose Another Image</button>
+            <button type="button" class="btn btn-secondary" onclick="goToUploadForm()">Back to Upload</button>
+        </div>
+    </div>
+    <div class="shadow cont">
+        <h1>Chat with us.</h1>
+    </div>
+    </div>
+    <div class="d-flex flex-row justify-content-end">
+        <button href="sih.html" class="btn btn-primary">Back</button>
+        </div>
+</div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function goBack() {
+            // Hide prediction results and show the upload form again
+            document.getElementById('upload-form').style.display = 'block';
+            document.getElementById('prediction-results').style.display = 'none';
+        }
+
+        function goToUploadForm() {
+            // Show the upload form and hide the prediction results
+            document.getElementById('upload-form').style.display = 'block';
+            document.getElementById('prediction-results').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

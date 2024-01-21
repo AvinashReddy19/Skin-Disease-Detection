@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c71a2b98b5.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.bg-container{
+    background-color: #f5f7fa;
+}
+.navbar-image {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+.container1 {
+    background-color: #D0D0ff;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 40px;
+}
+
+
+.main-heading {
+    color: #0C0521;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Roboto";
+}
+
+.description {
+    color: #0C0521;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+.des{
+    color: #939597;
+    font-size: 14px;
+}
+.button {
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 7px;
+}
+.main-image{
+    height: 280px;
+    width: 280px;
+}
+.cause-container{
+    margin: 40px;
+}
+.cause-heading {
+    color: #1f2933;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.cause-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
+
+.cause-box {
+    border-radius: 10px;
+}
+
+.cause-h {
+    color: #959ead;
+    font-size: 28px;
+}
+
+.cause-p {
+    color: #323f4b;
+    font-size: 18px;
+}
+
+.card-link {
+    color: #1754a1;
+    font-size: 17px;
+}
+.bottom-section {
+    background-color: #0d2436;
+    font-family: "Roboto";
+    
+}
+
+.logo {
+    margin-top: 60px;
+    padding: 20px;
+    height: 85px;
+    text-align: center;
+}
+
+.s-media {
+    background-color: #152c3e;
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+.s-icon {
+    color: #5a7184;
+    padding: 15px;
+}
+
+.address {
+    color: #b5b3b4;
+    font-weight: 100;
+    margin: 15px;
+    font-size: 14px;
+}
+
+.icon-container {
+    background-color: #152c3e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+.font-awesome-icons {
+    color: #5a7184;
+    font-size: 24px;
+}
+
+.card-head {
+    color: #5a7184;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sub-points {
+    color: #5a7184;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.upload-container{
+    background-color: #;
+}
+</style>
+        
+    <script>
+        function navigateToIndex() {
+            // Redirect to the index page
+            window.location.href = "/index";
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="bg-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/navbar-logo-img.png"
+                class="navbar-image"
+                alt=""
+              />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#">
+                  Home <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="#">Causes</a>
+                <a class="nav-link" href="index.html">upload</a>
+                <a class="nav-link" href="#">About Us</a>
+              </div>
+            </div>
+          </nav>
+        <div class="container1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-row justify-content-between">
+                <div class="">
+                    <h1 class="main-heading">Welcome to DermDetect: Your Skin Health Companion</h1>
+                    <p class="description">Are you concerned about a skin condition? DermDetect is here to help you on your journey to better skin health. Our user-friendly online tool provides
+                         a preliminary assessment of dermatological manifestations, offering valuable insights and guidance.</p>
+                         <button onclick="navigateToIndex()" class="btn-primary button mb-2">Know Disease</button>
+                        
+
+
+                    <p class="des">Your Consultations are private,safe and secure</p>
+                </div>
+                <div><img class="main-image" src="https://media.istockphoto.com/id/1469200642/photo/young-woman-are-worried-about-faces-dermatology-and-allergic-to-steroids-in-cosmetics.jpg?s=612x612&w=0&k=20&c=rHRZtEY9_i01DIyy0Pz1_4awgHSZn2xcCJz6C4LnlqY="/></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="sectionupload">
+            <div class="upload-container">
+
+            </div>
+
+        </div>
+        <div id="commondiseases" class="cause-container">
+            <div class="col-12">
+                <h1 class="cause-heading m-2">Common Diseases</h1>
+            </div>
+            
+            <div class="mb-4 d-flex flex-row justify-content-between">
+                <div class="ml-2 mr-4 d-flex flex-row shadow cause-box mt-2">
+                    
+                    <div class="m-2">
+                        <h1 class="cause-h">Acne and Rosacea</h1>
+                        <p class="cause-p">Rosacea is a long-term inflammatory skin condition that causes reddened skin and a rash, usually on the nose and cheeks.</p>
+                        <a class="card-link" href="">
+                            READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="cause-image" src="https://tse1.mm.bing.net/th?id=OIP.DPLOaAl_b2jFO_p9PFTz-wHaE_&pid=Api&P=0&h=180" />
+                </div>
+                <div class="ml-2 d-flex flex-row shadow cause-box mt-2">
+                    
+                    <div class="m-2">
+                        <h1 class="cause-h">Acnitic Keratosis Basal Cell Carcinoma</h1>
+                        <p class="cause-p">Both actinic keratosis and BCC are mainly caused by exposure to UV radiation. Accumulated UV exposure can damage the DNA in skin cells.</p>
+                        <a class="card-link" href="">
+                            READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="cause-image" src="https://media.gettyimages.com/photos/bowenoid-actinic-keratosis-and-focus-of-a-superficial-basal-cell-picture-id151059066?k=6&m=151059066&s=612x612&w=0&h=8KkdkgyMZ_DwHfBog1Rnhw9NFRJ7JLAtpnhWltlZKwA=" />
+                </div>
+                <div class="ml-4 d-flex flex-row shadow cause-box mt-2">
+                    
+                    <div class="m-2">
+                        <h1 class="cause-h">Atopic Dermatisis</h1>
+                        <p class="cause-p">Atopic dermatitis (eczema) is a condition that causes dry, itchy and inflamed skin.It is long lasting (chronic) and tends to flare sometimes.</p>
+                        <a class="card-link" href="">
+                            READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="cause-image" src="https://tse2.explicit.bing.net/th?id=OIP.koI58dbiqf623AEYIBKyBgHaEK&pid=Api&P=0&h=180" />
+                </div>
+                
+            </div>
+            <div class="mb-4 d-flex flex-row justify-content-between">
+                <div class="ml-2 mr-4 d-flex flex-row shadow cause-box mt-2">
+                    
+                    <div class="m-2">
+                        <h1 class="cause-h">Bullous Disease</h1>
+                        <p class="cause-p">Bullous pemphigoid (bull-us pem-fuh-goyd) is a rare skin condition that causes itchy, hive-like welts or fluid-filled blisters. It may affect a small area of your body or it may be widespread.</p>
+                        <a class="card-link" href="">
+                            READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="cause-image" src="https://tse2.mm.bing.net/th?id=OIP.i-SADhwVrjMXZqarCbWgyAHaEd&pid=Api&P=0&h=180" />
+                </div>
+                <div class="ml-2 d-flex flex-row shadow cause-box mt-2">
+                    
+                    <div class="m-2">
+                        <h1 class="cause-h">Eczema</h1>
+                        <p class="cause-p">Eczema is a common skin condition that causes itchiness, rashes, dry patches, and infection. It's a type of dermatitis, which is a group of conditions that can inflame or irritate your skin.</p>
+                        <a class="card-link" href="">
+                            READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="cause-image" src="https://tse1.mm.bing.net/th?id=OIP.ZL6hhwSVsvVLkepf9sewOgHaEK&pid=Api&P=0&h=180" />
+                </div>
+                <div class="ml-4 d-flex flex-row shadow cause-box mt-2">
+                    
+                    <div class="m-2">
+                        <h1 class="cause-h">Psoriasis</h1>
+                        <p class="cause-p">Psoriasis is a common, long-term (chronic) disease with no cure. It can be painful, interfere with sleep and make it hard to concentrate. The condition tends to go through cycles.</p>
+                        <a class="card-link" href="">
+                            READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="cause-image" src="https://tse4.mm.bing.net/th?id=OIP.wGgdfTP9PxsKs5b4LbmITwFJC9&pid=Api&P=0&h=180" />
+                </div>
+                
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <img src="" class="logo" />
+                            <div class="d-flex flex-row mb-4">
+                                <div class="icon-container mr-2">
+                                    <i class="fa-brands fa-google font-awesome-icons"></i>
+                                </div>
+                                <div class="icon-container mr-2">
+                                    <i class="fa-brands fa-twitter font-awesome-icons"></i>
+                                </div>
+                                <div class="icon-container mr-2">
+                                    <i class="fa-brands fa-instagram font-awesome-icons"></i>
+                                </div>
+                                <div class="icon-container mr-2">
+                                    <i class="fa-brands fa-linkedin font-awesome-icons"></i>
+                                </div>
+                            </div>
+                            <p class="address">CBIT, Gandipet, India.</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more-card">
+                            <h1 class="card-head">Get to know us</h1>
+                            <p class="sub-points">About us</p>
+                            <p class="sub-points">Career</p>
+                            <p class="sub-points">Press Release</p>
+                            <p class="sub-points">Gift a smile</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more-card">
+                            <h1 class="card-head">Contact With Us</h1>
+                            <p class="sub-points">Facebook</p>
+                            <p class="sub-points">Twitter</p>
+                            <p class="sub-points">Instagram</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more-card">
+                            <h1 class="card-head">Let US Help You </h1>
+                            <p class="sub-points">100% Purchase Protection</p>
+                            <p class="sub-points">Your Acount</p>
+                            <p class="sub-points">Return Centre</p>
+                            <p class="sub-points">Help</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </div>
+</body>
+</html>

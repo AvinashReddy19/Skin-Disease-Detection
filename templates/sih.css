@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.bg-container{
+    background-color: #f5f7fa;
+}
+.navbar-image {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+.container1 {
+    background-color: #D0D0ff;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 40px;
+}
+
+
+.main-heading {
+    color: #0C0521;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Roboto";
+}
+
+.description {
+    color: #0C0521;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+.des{
+    color: #939597;
+    font-size: 14px;
+}
+.button {
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 7px;
+}
+.main-image{
+    height: 280px;
+    width: 280px;
+}
+.cause-container{
+    margin: 40px;
+}
+.cause-heading {
+    color: #1f2933;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.cause-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
+
+.cause-box {
+    border-radius: 10px;
+}
+
+.cause-h {
+    color: #959ead;
+    font-size: 28px;
+}
+
+.cause-p {
+    color: #323f4b;
+    font-size: 18px;
+}
+
+.card-link {
+    color: #1754a1;
+    font-size: 17px;
+}
+.bottom-section {
+    background-color: #0d2436;
+    font-family: "Roboto";
+    
+}
+
+.logo {
+    margin-top: 60px;
+    padding: 20px;
+    height: 85px;
+    text-align: center;
+}
+
+.s-media {
+    background-color: #152c3e;
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+.s-icon {
+    color: #5a7184;
+    padding: 15px;
+}
+
+.address {
+    color: #b5b3b4;
+    font-weight: 100;
+    margin: 15px;
+    font-size: 14px;
+}
+
+.icon-container {
+    background-color: #152c3e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+.font-awesome-icons {
+    color: #5a7184;
+    font-size: 24px;
+}
+
+.card-head {
+    color: #5a7184;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sub-points {
+    color: #5a7184;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.upload-container{
+    background-color: #;
+}
